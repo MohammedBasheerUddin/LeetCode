@@ -7,4 +7,4 @@ class Solution:
             if nums[i] == target:                  # if target founded in array append its index in z
                 z.append(i)                         
         z = [z[0],z[-1]]                           # return only first and last element of the z array
-        return z                                   # return z 
+        return z                                   # return z .
