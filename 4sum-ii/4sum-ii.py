@@ -22,7 +22,6 @@ class Solution:
             for l in range(0, lenD):
                 y = nums4[l]
                 target = -(x+y)             #target = - (-1+0) = 1 , so negative will be turned to positive and vice versa
-                print(ans)
                 if target in m:             #target in dict m ? yes then increment ans
                     ans += m[target]
                     
