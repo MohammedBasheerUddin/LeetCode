@@ -13,12 +13,12 @@ class Solution:
         
         while head1 and head2:                        # traverse through both heads
             if head1.val < head2.val:                 # compare head values so that elements are sorted during appending elements in sorted_listNodes
-                sorted_listNode.next = head1          # set sorted_listNode -> head1
+                sorted_listNode.next = head1          # set sorted_listNode -> head1, if head1.val < head2.val:  
                 head1 = head1.next                    # only move head1 if head1.val < head2.val
             else:
-                sorted_listNode.next = head2          # set sorted_listNode -> head2
+                sorted_listNode.next = head2          # set sorted_listNode -> head2, if head1.val < head2.val:  
                 head2 = head2.next                    # only move head2 if head2.val < head1.val
-            sorted_listNode = sorted_listNode.next    # keep moving sorted+listNode to next 
+            sorted_listNode = sorted_listNode.next    # keep moving sorted_listNode to next 
         
         if head1 is None:                             # if head1 contain no values
             sorted_listNode.next = head2              # sorted_listNode points to head 2 as it already contains sorted values no need to sort again
